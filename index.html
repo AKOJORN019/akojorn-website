@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--=============== FONT ICON AWESOME===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--=============== BOOTSTRAP 5.3.2===============-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style/navbar.css">
+    <link rel="stylesheet" href="/style/genaral.css">
+    <link rel="stylesheet" href="/style/sidebar.css">
+    <link rel="stylesheet" href="/style/genaral.css">
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/main.js">
+</head>
+<body class="">
+    <!-- NAVBAR -->
+    <nav class="navBar">
+        <div class="navBar_container">
+            <div class="navBar_Logo">
+                <img src="/assets/logo/akojorn_logo_svg.svg" alt="">
+            </div>
+            <div class="navBar_Button">
+                <a href="#login" class="btn_navBar_Login"
+                >เข้าสู่ระบบ</a>
+                <a href="#signup" class="btn_navBar_Signup"
+                >สมัครสมาชิก</a>
+                <i class="fa-solid fa-bars fs-4 mx-2" onclick="openSideBar()" style="color: #fbfbfd;"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SIDEBAR -->
+    <aside class="sideBar" id="my_Side_Bar">
+        <div class="sideBar_Container">
+            <div class="sideBar_Account">
+                <img src="/assets/ads/perfil.png" alt="sidebar image" class="sidebar__perfil">
+ 
+                <div class="sidebar_names">
+                   <h3 class="sideBar_Name">peerawat2546</h3>
+                   <span class="sideBar_Mypost">ประกาศของฉัน</span>
+                </div>
+ 
+                <i class="fa-solid fa-arrow-right" style="color: #fbfbfd;"></i>
+            </div>
+            <div class="sideBar_Content">
+                <div class="sideBar_MenuList">
+                    <div class="sideBar_list">
+                        <a href="#home" class="sideBar_link active-link">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="sideBar_link-name">หน้าแรก</span>
+                        </a>
+                        <a href="#search" class="sideBar_link">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span class="sideBar_link-name">ค้นหา</span>
+                        </a>
+                        <a href="#payment" class="sideBar_link">
+                            <i class="fa-solid fa-coins"></i>
+                            <span class="sideBar_link-name">เติมเงิน</span>
+                        </a>
+                        <a href="#payment" class="sideBar_link">
+                            <i class="fa-solid fa-ranking-star"></i>
+                            <span class="sideBar_link-name">อันดับ</span>
+                        </a>
+                        <a href="#payment" class="sideBar_link">
+                            <i class="fa-solid fa-heart"></i>
+                            <span class="sideBar_link-name">ถูกใจ</span>
+                        </a>
+                        <a href="#travel" class="sideBar_link">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <span class="sideBar_link-name">ที่เที่ยว</span>
+                        </a>
+                    </div>
+                    <h3 class="sideBar_title">
+                        <span>VIP</span>
+                    </h3>
+                    <div class="sideBar_list">
+                        <a href="#map" class="sideBar_link">
+                            <i class="fa-solid fa-street-view"></i>
+                            <span class="sideBar_link-name">แผนที่ <span>(VIP)</span></span>
+                        </a>
+                        <a href="#merketplace" class="sideBar_link">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="sideBar_link-name">ตลาด</span>
+                        </a>
+                        <a href="#withdraw" class="sideBar_link">
+                            <i class="fa-solid fa-money-bill-transfer"></i>
+                            <span class="sideBar_link-name">ถอนเงิน</span>
+                        </a>
+                        <a href="#merketplace" class="sideBar_link">
+                            <i class="fa-solid fa-bell"></i>
+                            <span class="sideBar_link-name">แจ้งเตือน</span>
+                        </a>
+                        <a href="#withdraw" class="sideBar_link">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            <span class="sideBar_link-name">ออกจากระบบ</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN -->
+    <div class="main">
+        <div class="main_Container">
+            <!-- ADS HERO -->
+            <div class="hero_Container">
+                <p>อโคจร <span>ไม่ใช่สถานที่แต่...คือผู้คน</span></p>
+                <img src="/assets/ads/ads1.png" alt="">
+            </div>
+            <!-- SHORT MENU -->
+            <div class="shortCut_Container">
+                <div class="shortCut_List container">
+                    <span class="shortCut_topic">#เมนูลัด</span>
+                    <div class="row">
+                        <div class="icon_shortCut col">
+                            <div class="icon_List"><a href="#">
+                                <img src="/assets/icon/profile.svg" class="text-white " alt="">
+                            </a>
+                            </div>
+                            <div>
+                            <span class="text-white">โปรไฟล์</span>
+                            </div>
+                        </div>
+                        <div class="icon_shortCut col">
+                            <div class="icon_List"><a href="#">
+                                <img src="/assets/icon/search.svg" class="text-white " alt="">
+                            </a>
+                            </div>
+                            <div>
+                            <span class="text-white">ค้นหา</span>
+                            </div>
+                        </div>
+                        <div class="icon_shortCut col">
+                            <div class="icon_List"><a href="#">
+                                <img src="/assets/icon/payment.svg" class="text-white " alt="">
+                            </a>
+                            </div>
+                            <div>
+                            <span class="text-white">เดิมเงิน</span>
+                            </div>
+                        </div>
+                        <div class="icon_shortCut col">
+                            <div class="icon_List"><a href="#">
+                                <img src="/assets/icon/ranking.svg" class="text-white " alt="">
+                            </a>
+                            </div>
+                            <div>
+                            <span class="text-white">อันดับ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QUICK SEARCH -->
+            <div class="quickSearch_Container">
+                <div class="quickSearch_list container">
+                    <span class="text-white shortCut_topic">#ค้นหาด่วน</span>
+                    <div class="dropdown">
+                        <button class="quickSearch_Button btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          เลือกตามประเภท
+                        </button>
+                        <ul class="dropdown-menu w-100 p-0 border-0" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item d-flex flex-column align-items-center text-center justify-content-center" style="background-color: #0B525B; height: 64px;" href="#">
+                                <span>SIDELINE</span>
+                                <span>ไซด์ไลน์</span>
+                            </a>
+                            </li>
+                            <li><a class="dropdown-item d-flex flex-column align-items-center text-center justify-content-center" style="background-color: #144552; height: 64px;" href="#">
+                                <span>DEKN</span>
+                                <span>งานเอ็น</span>
+                            </a>
+                            </li>
+                            <li><a class="dropdown-item d-flex flex-column align-items-center text-center justify-content-center" style="background-color: #1B3A4B; height: 64px;" href="#">
+                                <span>MASSAGE</span>
+                                <span>หมอนวด</span>
+                            </a>
+                            </li>
+                            <li><a class="dropdown-item d-flex flex-column align-items-center text-center justify-content-center" style="background-color: #212F45; height: 64px;" href="#">
+                                <span>SEXPHONE</span>
+                                <span>เซ็กส์โฟน</span>
+                            </a>
+                            </li>
+                            <li><a class="dropdown-item d-flex flex-column align-items-center text-center justify-content-center" style="background-color: #272640; height: 64px;" href="#">
+                                <span>BARHOST</span>
+                                <span>บาร์โฮส</span>
+                            </a>
+                            </li>
+                            <li><a class="dropdown-item d-flex flex-column align-items-center text-center justify-content-center" style="background-color: #312244; height: 64px;" href="#">
+                                <span>SWINGERS</span>
+                                <span>แลกคู่</span>
+                            </a>
+                            </li>
+                            <li><a class="dropdown-item d-flex flex-column align-items-center text-center justify-content-center" style="background-color: #3E1F47; height: 64px;" href="#">
+                                <span>CREATOR</span>
+                                <span>ขายภาพคลิป</span>
+                            </a>
+                            </li>
+
+                        </ul>
+                      </div>
+                </div>
+            </div>
+            <!-- VIP MENU -->
+            <div class="vipMenu_Container">
+                <div class="vipMenu container">
+                    <span class="text-white shortCut_topic">#บริการอื่นๆ</span>
+                    <div class="row row-cols-4">
+                        <div class="vipMenu_List col text-white text-center">
+                                <div class="vipMenu_Icon">
+                                    <a href=""><img src="/assets/icon/mappeople.svg" alt=""></a>
+                                </div>
+                                <div><span>แผนที่</span></div>
+                        </div>
+                        <div class="vipMenu_List col text-white text-center">
+                            <div class="vipMenu_Icon">
+                                <a href=""><img src="/assets/icon/travel.svg" alt=""></a>
+                            </div>
+                            <div><span>ที่ท่องเที่ยว</span></div>
+                        </div>
+                        <div class="vipMenu_List col text-white text-center">
+                            <div class="vipMenu_Icon">
+                                <a href=""><img src="/assets/icon/marketplace.svg" alt=""></a>
+                            </div>
+                            <div><span>ตลาด</span></div>
+                        </div>
+                        <div class="vipMenu_List col text-white text-center">
+                            <div class="vipMenu_Icon">
+                                <a href=""><img src="/assets/icon/withdraw.svg" alt=""></a>
+                            </div>
+                            <div><span>ถอนเงิน</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CHECK IN ZONE -->
+            <div class="checkIn_Zone_Container">
+                    <div class="checkIn_list container">
+                        <span class="text-white shortCut_topic">#เช็คอินล่าสุดพร้อมรับงาน</span>
+                        <div class="row row-cols-sm-3 row-cols-xs-5 row-cols-4">
+                            <div class="userCheckIn col text-center">
+                                <img src="/assets/ads/perfil.png" alt="" style="width: 45px; border-radius: 100%;">
+                                <p>สมุทรปราการ</p>
+                            </div>
+                            <div class="userCheckIn col text-center">
+                                <img src="/assets/ads/perfil.png" alt="" style="width: 45px; border-radius: 100%;">
+                                <p>ชลบุรี</p>
+                            </div>
+                            <div class="userCheckIn col text-center">
+                                <img src="/assets/ads/perfil.png" alt="" style="width: 45px; border-radius: 100%;">
+                                <p>ระยอง</p>
+                            </div>
+                            <div class="userCheckIn col text-center">
+                                <img src="/assets/ads/perfil.png" alt="" style="width: 45px; border-radius: 100%;">
+                                <p>กรุงเทพมหานคร</p>
+                            </div>
+                            <div class="userCheckIn col text-center">
+                                <img src="/assets/ads/perfil.png" alt="" style="width: 45px; border-radius: 100%;">
+                                <p>เมืองชลบุรี</p>
+                            </div>
+                            <div class="userCheckIn col text-center">
+                                <img src="/assets/ads/perfil.png" alt="" style="width: 45px; border-radius: 100%;">
+                                <p>เมืองระยอง</p>
+                            </div>
+                            <div class="userCheckIn col text-center">
+                                <img src="/assets/ads/perfil.png" alt="" style="width: 45px; border-radius: 100%;">
+                                <p>ปากเกร็ด</p>
+                            </div>
+                            <div class="userCheckIn col text-center">
+                                <img src="/assets/ads/perfil.png" alt="" style="width: 45px; border-radius: 100%;">
+                                <p>เกษตรสมบูรณ์</p>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+
+            <!-- DESCRIPTION WEBSITE -->
+            <div class="description_Container">
+                <div class="description_Content container"></div>
+                <p>
+                    พื้นที่โฆษณา หาเพื่อน รวมสาวไซด์ไลน์ ชายหล่อ คนรู้ใจ รับงานเอง รวมเด็กเอ็น หมอนวดอิสระ บาร์โฮส รับจ้าง
+                    กิน เที่ยว เป็นเพื่อน รับงานเสริม หรืองานไซด์ไลน์ฟิวแฟน หลังเลิกงานประจำ <span style="color: #FE3535;">ห้ามไม่ให้มีการโอนเงินเพื่อซื้อบริการ
+                    ทางเพศ และ เก็บค่าบริการที่ผิดต่อกฏหมาย</span> หรือที่นอก
+                    เหนือจาก จุดประสงค์ของเว็บไซต์(ห้ามขายบริการทาง
+                    เพศห้ามกระทำการค้าประเวณีโดยเด็ดขาด)หากพบเห็น
+                    กรุณารายงานโพสต์แจ้งเว็บไซต์โดยทันที
+                </p>
+            </div>
+
+            <!-- GANG ZONE -->
+            <div class="gangZone_container">
+                <div class="gangZone_content container">
+                    <div class="gangTopic">
+                        <span class="text-white shortCut_topic">สังกัด</span>
+                        <span class="text-white toltallist">ดูทั้งหมด<img src="/assets/icon/rightarrow.svg" alt=""></span>
+                    </div>
+                    <div class="gangProfile_Zone row row-cols-3">
+                        <div class="gangProfile col">
+                            <img src="/assets/ads/gangprofile.png" alt="">
+                            <a href="#" class="">MADAM8888</a>
+                        </div>
+                        <div class="gangProfile col">
+                            <img src="/assets/ads/gangprofile.png" alt="">
+                            <a href="#" class="">MADAM8888</a>
+                        </div>
+                        <div class="gangProfile col">
+                            <img src="/assets/ads/gangprofile.png" alt="">
+                            <a href="#" class="">MADAM8888</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POST ITEM -->
+            <div class="post_container">
+                        <div class="post_Zone container">
+                            <span class="text-white shortCut_topic">สมาชิก</span>
+                                <div class="row row-cols-2 row-gap-2">
+                                    <div class="post_Card col">
+                                        <img src="/assets/ads/example1.png" alt="">
+                                        <div class="post_Card_Detail">
+                                            <span class="post_Name text-white fs-4 fw-semibold">ดิว , <span>23</span></span>
+                                            <span class="post_Name text-white fs-6">กรุงเทพมหานคร<span>  ดินแดง</span></span>
+                                            <span class="post_Name text-white fs-6">฿ 2,000</span>
+                                            <span class="verify_IconPost post_Name">ยืนยัน</span>
+                                        </div>
+                                    </div>
+                                    <div class="post_Card col">
+                                        <img src="/assets/ads/perfil.png" alt="">
+                                        <div class="post_Card_Detail">
+                                            <span class="post_Name text-white fs-4 fw-semibold">ดิว , <span>23</span></span>
+                                            <span class="post_Name text-white fs-6">กรุงเทพมหานคร<span>  ดินแดง</span></span>
+                                            <span class="post_Name text-white fs-6">฿ 2,000</span>
+                                            <span class="verify_IconPost post_Name">ยืนยัน</span>
+                                        </div>
+                                    </div>
+                                    <div class="post_Card col">
+                                        <img src="/assets/ads/example4.jpg" alt="">
+                                        <div class="post_Card_Detail">
+                                            <span class="post_Name text-white fs-4 fw-semibold">ดิว , <span>23</span></span>
+                                            <span class="post_Name text-white fs-6">กรุงเทพมหานคร<span>  ดินแดง</span></span>
+                                            <span class="post_Name text-white fs-6">฿ 2,000</span>
+                                            <span class="verify_IconPost post_Name">ยืนยัน</span>
+                                        </div>
+                                    </div>
+                                    <div class="post_Card col">
+                                        <img src="/assets/ads/example2.jpg" alt="">
+                                        <div class="post_Card_Detail">
+                                            <span class="post_Name text-white fs-4 fw-semibold">ดิว , <span>23</span></span>
+                                            <span class="post_Name text-white fs-6">กรุงเทพมหานคร<span>  ดินแดง</span></span>
+                                            <span class="post_Name text-white fs-6">฿ 2,000</span>
+                                            <span class="verify_IconPost post_Name">ยืนยัน</span>
+                                        </div>
+                                    </div>
+                                    <div class="post_Card col">
+                                        <img src="/assets/ads/example3.jpg" alt="">
+                                        <div class="post_Card_Detail">
+                                            <span class="post_Name text-white fs-4 fw-semibold">ดิว , <span>23</span></span>
+                                            <span class="post_Name text-white fs-6">กรุงเทพมหานคร<span>  ดินแดง</span></span>
+                                            <span class="post_Name text-white fs-6">฿ 2,000</span>
+                                            <span class="verify_IconPost post_Name">ยืนยัน</span>
+                                        </div>
+                                    </div>
+                                    <div class="post_Card col">
+                                        <img src="/assets/ads/example5.jpg" alt="">
+                                        <div class="post_Card_Detail">
+                                            <span class="post_Name text-white fs-4 fw-semibold">ดิว , <span>23</span></span>
+                                            <span class="post_Name text-white fs-6">กรุงเทพมหานคร<span>  ดินแดง</span></span>
+                                            <span class="post_Name text-white fs-6">฿ 2,000</span>
+                                            <span class="verify_IconPost post_Name">ยืนยัน</span>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+            </div>
+            <!-- FOOTER -->
+            <div class="footer_container">
+                <div class="footer_Container container">
+                    <div class="footer_Logo">
+                        <img src="/assets/logo/akojorn_logo_svg.svg" alt="">
+                    </div>
+                    <div class="footer_Content">
+                        <p>Akojorn หรือ อโคจร เว็ปไซต์รวมไซด์ไลน์ฟิวแฟน หลังเลิกงานประจำ เพื่อหา นักศึกษาไซด์ไลน์ ชายแท้รับงาน 
+                            เด็กเอ็นใกล้คุณ เพื่อสร้างความรื่นรมย์ในงานเลี้ยง เพื่อให้ผู้ใช้บริการได้มีฟิวแฟน แต่ไม่ใช่แฟน คลายเหงาและแก้เบื่อ 
+                            อโคจร ยังรวมผู้ที่ รับงานหมอนวดอิสระ ที่รับงานนอกสถานที่ อโคจร มีความภูมิใจนำเสนอเพศทางเลือก LGBTQ+ เกย์ 
+                            ทอม เลสเบี้ยน สาวสอง และเพศทางเลือก  ไม่ว่าจะเป็น รับงานชลบุรี รับงานระยอง รวมไปถึงไซด์ไลน์ใกล้ฉันที่สุด เช่น 
+                            ไซด์ไลน์เชียงใหม่ ไซด์ไลน์นนทบุรี ไซด์ไลน์นครปฐม ไซด์ไลน์สมุทรปราการหรือ สมุทรสาคร เป็นต้น ไซด์ไลน์ใกล้ฉันหรือ
+                            นักศึกษาฟิวแฟนรับงานนอกสถานที่ ก็ค้นหาผ่านแผนที่ได้ รวมไปถึงเด็กเอ็น ที่ให้ความบันเทิงในงานเลี้ยงปาร์ตี้ หรือแฟนเช่า 
+                            ที่ให้บริการแบบฟิวแฟนแบบฟินๆ ทั้งนี้อโคจร มีการยืนยันตัวตน และ ที่พิเศษคือการยืนยันใบหน้า ไซด์ไลน์เป็นชื่อเรียกนึงของ
+                            อาชีพเสริมหลังงานประจำ เพื่อความสะดวก อโคจรได้รวมไซด์ไลน์ผู้รับงานเอง ไว้ให้คุณแล้ว</p>
+                    </div>
+                    <div class="footer_Link">
+                        <a href="#">นโยบายความเป็นส่วนตัว</a>
+                        <a href="#">เกี่ยวกับเรา</a>
+                        <a href="#">ออกเดทอย่างปลอดภัย</a>
+                        <a href="#">เงื่อนไขการใช้งาน</a>
+                        <a href="#">ติดต่อเรา</a>
+                    </div>
+                    <div>
+                        <p>Powered By 019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- BOOTSTRAP SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
